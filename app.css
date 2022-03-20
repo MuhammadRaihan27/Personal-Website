@@ -1,230 +1,296 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --color1: #061E48;
-    --color2: #E56711;
-    --color3: #E7F7FB;
-    --color4: #7A8ADD;
-    --color5: #F7A157;
-    --color6: #919BAE;
+  --color1: #424874;
+  --color2: #e56711;
+  --color3: #919bae;
+  --color4: #7a8add;
+  --color5: #ff9e4b;
+  --color6: #ff9e4b;
+  --color7: #a4a4a4;
+  --colorWhite: #fff;
 }
 
 body {
-    background-color: var(--color3);
+  background-color: var(--colorWhite);
+}
+
+a {
+  display: flex;
+  display: block;
+  text-decoration: none;
 }
 
 .absolute {
-    position: absolute;
+  position: absolute;
 }
 
 .star1 {
-    top: -6rem;
-    left: -6rem;
-    color: var(--color5);
-    font-size: 20rem;
-    transform: rotate(33.92deg);
+  top: -6rem;
+  left: -6rem;
+  color: var(--color5);
+  font-size: 20rem;
+  transform: rotate(33.92deg);
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 1.5rem;
 }
 
 .row2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 1rem;
 }
 
 .top1 {
-    margin-top: 7rem;
+  margin-top: 7rem;
 }
 
 .top2 {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .linear1 {
-    background-image: linear-gradient(45deg, #D05353, #fb25ff77);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #d05353, #fb25ff77);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .linear2 {
-    background-image: linear-gradient(45deg, var(--color2), var(--color5));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, var(--color2), var(--color5));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .fw-2 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .fs-2 {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .col {
-    width: 100%;
+  width: 100%;
 }
 
 .grey {
-    color: var(--color6);
+  color: var(--color6);
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* ------------- Sec 1 ------------- */
 
 #sec-1 .container {
-    position: relative;
+  position: relative;
+}
+
+#sec-1 .heading,
+#sec-1 .dekscription {
+  text-align: center;
+}
+
+#sec-1 .dekscription {
+  color: var(--color3);
 }
 
 #sec-1 h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
-
-#sec-1 img {
-    width: 80%;
-}
-
-#sec-1 .star2 {
-    top: 25rem;
-    left: 40%;
-    color: var(--color4);
-    font-size: 3rem;
-    transform: rotate(30deg);
-}
-
 
 /* ------------- Sec 1 ------------- */
 
-
 /* ------------- Sec 2 ------------- */
 
-#sec-2 h2 {
-    margin-bottom: 4rem;
+#sec-2 .button-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#sec-2 .button-group button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 8px 8px rgba(128, 128, 128, 12%);
+  background-color: var(--colorWhite);
+  color: var(--color2);
+  transition: 0.3s ease-in;
+}
+
+#sec-2 .button-group .active {
+  background-color: var(--color5);
+  color: var(--colorWhite);
+}
+
+#sec-2 .project {
+  margin-top: 5rem;
 }
 
 #sec-2 .card {
-    width: 18rem;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
+  width: 18rem;
+  height: max-content;
+  background-color: var(--colorWhite);
+  box-shadow: 0 0 43px rgba(17, 0, 0, 8%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+#sec-2 .card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 9rem;
+  border-radius: 1rem;
 }
 
 #sec-2 .card-img img {
-    width: 100%;
-    border-radius: 1rem;
+  width: 100%;
 }
 
-#sec-2 .card-link {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--color4);
-    cursor: pointer;
-    text-decoration: none;
-    gap: 0.5rem;
-    transition: .3s ease-in;
+/* #sec-2 .card-img1 {
+  background: url("./img/Project/project2.png") no-repeat center;
+  background-size: cover;
+  object-fit: cover;
+  background-position-y: 0;
 }
 
-#sec-2 .card-link:hover {
-    color: var(--color2);
+#sec-2 .card-img2 {
+  background: url("./img/Project/project1.png") no-repeat center;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 0 0;
 }
 
-#sec-2 .card-link:hover .arrow-right {
-    transform: translateX(5px);
-    color: var(--color2);
+#sec-2 .card-img3 {
+  background: url("./img/Project/project4.png") no-repeat center;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 0 0;
 }
 
-#sec-2 .card-link .arrow-right {
-    color: var(--color4);
-    transition: .3s ease-in;
+#sec-2 .card-img4 {
+  background: url("./img/Project/project3.png") no-repeat center;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 0 0;
+} */
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#sec-2 .tooltip {
-    width: max-content;
-    padding: 0.2rem 0.5rem;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 0.7rem;
-    margin: 0.3rem 0 1rem 0;
+#sec-2 .card-title {
+  font-size: 1.25rem;
+  color: var(--color1);
+  margin-bottom: 0.5rem;
 }
 
-#sec-2 .toolStatis {
-    background: var(--color2);
+#sec-2 .card-deks {
+  color: var(--color7);
 }
 
-#sec-2 .toolLanding {
-    background: var(--color1);
+#sec-2 .project-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
+#sec-2 .project-detail p {
+  margin: 0;
+  padding: 0;
+}
+
+#sec-2 .project-detail .tooltip {
+  width: max-content;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.2rem 0.7rem;
+  border-radius: 3px;
+  background-color: var(--color2);
+  color: var(--colorWhite);
+}
+
+#sec-2 .card .btn-lihat {
+  width: max-content;
+  padding: 0.3rem 1rem;
+  background-color: var(--color1);
+  color: var(--colorWhite);
+  border-radius: 0.5rem;
+}
 
 /* ------------- Sec 2 ------------- */
-
 
 /* Footer */
 
 footer {
-    width: 100%;
-    background: var(--color1);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  border-top-right-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
+  background: var(--color6);
 }
-
-footer span {
-    color: var(--color2);
-}
-
 
 /* Footer */
 
 @media (max-width: 991px) {
-    .row {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-    }
-    .row2 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .container {
-        padding: 2rem;
-    }
-    #sec-1 .heading,
-    #sec-1 .dekscription {
-        text-align: center;
-    }
-    #sec-2 .card {
-        width: 100%;
-    }
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .row2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container {
+    padding: 2rem;
+  }
+  #sec-1 .heading,
+  #sec-1 .dekscription {
+    text-align: center;
+  }
+  #sec-2 .card {
+    width: 100%;
+  }
 }
